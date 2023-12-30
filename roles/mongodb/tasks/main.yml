@@ -14,7 +14,7 @@
 - name: Enable and start mongodb
   ansible.builtin.service:
     name: mongod
-    state: start
+    state: started
     enabled: yes
 
 - name: Replace localhost with all IP
