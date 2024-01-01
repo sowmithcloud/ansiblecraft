@@ -3,20 +3,20 @@
 
 - name: app setting up
   ansible.builtin.import_role:
-  name: common
-  task_from: appsetup
+    name: common
+    task_from: appsetup
 
 - name: installing nodejs and dependencies
   ansible.builtin.import_role:
-  name: common
-  task_from: nodejsinstall
+    name: common
+    task_from: nodejsinstall
 
 - name: mongodb setup
   ansible.builtin.import_role:
-  name: common
-  task_from: monogodbsetup
+    name: common
+    task_from: monogodbsetup
 
 - name: daemon reload and service restart enable
   ansible.builtin.import_role:
-  name: common
-  task_from: systemd
+    name: common
+    task_from: systemd
