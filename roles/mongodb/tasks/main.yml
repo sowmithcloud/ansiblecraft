@@ -20,8 +20,8 @@
 - name: Replace localhost with all IP
   ansible.builtin.replace:
     path: /etc/mongod.conf
-    regexp: "127.0.0.0"
-    replace: "0.0.0.0"
+    regexp: '127.0.0.0'
+    replace: '0.0.0.0'
 
 - name: start and enable mongodb
   ansible.builtin.service:
