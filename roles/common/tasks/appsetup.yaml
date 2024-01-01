@@ -3,12 +3,12 @@
     name: roboshop
 
 - name: remove app directory
-  anisble.builtin.file:
+  ansible.builtin.file:
     path: /app
     state: absent
 
 - name: create app directory
-  anisble.builtin.file:
+  ansible.builtin.file:
     path: /app
     state: directory
 
