@@ -14,7 +14,7 @@
 - name: mongodb setup
   ansible.builtin.import_role:
     name: common
-    tasks_from: monogodbsetup
+    tasks_from: mongodbsetup
 
 - name: daemon reload and service restart enable
   ansible.builtin.import_role:
